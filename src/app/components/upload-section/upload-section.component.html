@@ -1,0 +1,7 @@
+<section (drop)="onFileDropped($event)" (dragover)="onDragOver($event)" matRipple (click)="openFileSelector()">
+  <mat-icon class="upload-icon">note_add</mat-icon>
+  <p class="upload-text">{{title}}</p>
+
+  <p class="selected-file" *ngIf="file">File: {{file.name}}</p>
+</section>
+<input type="file" hidden [id]="inputId" (change)="onInputFileChange($event)" accept=".csv"/>

@@ -1,0 +1,41 @@
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  min-height: 214px;
+  width: 100%;
+  background-color: #f5f5f5;
+  border: 1px dashed #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  padding: 1rem;
+
+  &:hover {
+    background-color: #e8e8e8;
+  }
+
+  .upload-icon {
+    font-size: 3rem;
+    width: 3rem;
+    height: 3rem;
+    color: #ccc;
+  }
+
+  .upload-text {
+    font-size: 1.5rem;
+    color: #ccc;
+  }
+
+  .selected-file {
+    font-size: .9rem;
+    color: #0a0a0a;
+    margin-top: 1rem;
+    padding: .5rem;
+    border: 1px solid #000;
+    background: rgba(123, 246, 125, 0.68);
+  }
+}

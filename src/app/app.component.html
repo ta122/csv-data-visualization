@@ -1,0 +1,21 @@
+<main>
+  <app-header></app-header>
+  <div class="upload-sections">
+    <div class="upload-sections-section">
+      <h2>{{files[0] ? 'Change activities file' : 'Select activities file'}}</h2>
+      <app-upload-section (onNewFile)="handleFileChange($event)"
+                          inputId="first-section-input"></app-upload-section>
+    </div>
+    <div class="upload-sections-section">
+      <h2>{{files[1] ? 'Change adjacency file' : 'Select adjacency file'}}</h2>
+      <app-upload-section (onNewFile)="handleFileChange($event, 1)"
+                          inputId="second-section-input"></app-upload-section>
+    </div>
+  </div>
+
+  <app-visualize-data [areFilesReady]="files.length === 2"
+                      [adjacencyMatrix]="matrix"
+                      [nodeProps]="nodes"
+
+                      (onUploadClick)="uploadFiles()"></app-visualize-data>
+</main>

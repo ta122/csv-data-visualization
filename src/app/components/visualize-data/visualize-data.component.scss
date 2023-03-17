@@ -1,0 +1,41 @@
+:host {
+  width: 100%;
+  max-width: 90vw;
+  height: inherit;
+}
+
+
+.container {
+  border: rgba(10, 10, 10, 0.8) 2px solid;
+  border-radius: 5px;
+  margin-top: 1rem;
+  padding: 1rem;
+  width: 100%;
+  max-width: 90vw;
+  height: inherit;
+  max-height: 45vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+}
+
+
+.mat-mdc-raised-button[disabled][disabled] {
+  --mdc-protected-button-disabled-container-color: unset;
+  --mdc-protected-button-disabled-label-text-color: unset;
+  --mdc-protected-button-container-color: unset;
+  --mdc-protected-button-label-text-color: rgba(255, 255, 255, 0.5);
+  --mdc-protected-button-container-elevation: 0;
+}
+.popover{
+  position: absolute;
+  left: 0;
+  top: 0;
+visibility: hidden;
+  background-color: #7b1fa2;
+  color: #FFFFFF;
+  padding: 25px;
+z-index: 99;
+}
